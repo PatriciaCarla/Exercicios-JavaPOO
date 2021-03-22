@@ -7,7 +7,9 @@ public class Pessoa {
     private String sexo;
     //Métodos 
     public void fazerAniversario() {
+        System.out.println("----------------------\n"+"Tinha " + this.getIdade()+ " anos");
         this.setIdade(++this.idade);
+        System.out.println("Completou: "+ this.getIdade()+ " anos");
     }
     //Métodos especiais
     public Pessoa(String n, int i, String s) {
