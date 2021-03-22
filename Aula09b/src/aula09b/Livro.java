@@ -18,12 +18,12 @@ public class Livro implements Publicacao{
         System.out.println("Leitor: "+ this.leitor.getNome());
     }
     //Métodos Especiais
-    public Livro(String t, String a, int tp, int pa, boolean ab, Pessoa l) {
+    public Livro(String t, String a, int tp, Pessoa l) {
         this.titulo = t;
         this.autor = a;
         this.totPaginas = tp;
-        this.pagAtual = pa;
-        this.aberto = ab;
+        this.pagAtual = 0;
+        this.aberto = false;
         this.leitor = l;
     }
     public String getTitulo() {
@@ -74,7 +74,9 @@ public class Livro implements Publicacao{
         System.out.println("Livro fechado");
     }
     @Override
-    public void folhear() {
+    public void folhear(int n) {
+        this.setPagAtual(n);
+        System.out.println(this.getPagAtual());
     }
     @Override
     public void avancarPag() {

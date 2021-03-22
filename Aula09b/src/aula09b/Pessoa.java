@@ -4,13 +4,13 @@ public class Pessoa {
     //Atributos
     private String nome;
     private int idade;
-    private char sexo;
+    private String sexo;
     //Métodos 
     public void fazerAniversario() {
         this.setIdade(++this.idade);
     }
     //Métodos especiais
-    public Pessoa(String n, int i, char s) {
+    public Pessoa(String n, int i, String s) {
         this.nome = n;
         this.idade = i;
         this.sexo = s;
@@ -27,10 +27,10 @@ public class Pessoa {
     public void setIdade(int i) {
         this.idade = i;
     }
-    public char getSexo() {
+    public String getSexo() {
         return this.sexo;
     }
-    public void setSexo(char s) {
+    public void setSexo(String s) {
         this.sexo = s;
     }
     
