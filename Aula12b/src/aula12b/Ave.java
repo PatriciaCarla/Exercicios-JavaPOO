@@ -15,6 +15,9 @@ public class Ave extends Animal{
     public void emitirSom() {
         System.out.println("Som de passaro");
     }
+    public void fazerNinho() {
+        System.out.println("Fazendo Ninho");
+    }
     //Métodos Especiais
     public Ave(float p, int i, int m, String cp) {
     this.setPeso(p);

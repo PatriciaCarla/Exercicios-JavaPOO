@@ -18,10 +18,12 @@ public class Aula12b {
         p.locomover();
         p.alimentar();
         p.emitirSom();
+        p.soltarBolha();
         
         a.locomover();
         a.alimentar();
         a.emitirSom();
+        a.fazerNinho();
         
         Canguru c = new Canguru(100f,15,5,"Caramelo");
         Cachorro k = new Cachorro(20f,12,4,"Caramelo");
@@ -52,9 +54,11 @@ public class Aula12b {
         d.locomover();
         d.alimentar();
         d.emitirSom();
+        d.soltarBolha();
         
         ra.locomover();
         ra.alimentar();
         ra.emitirSom();
+        ra.fazerNinho();
     }
 }

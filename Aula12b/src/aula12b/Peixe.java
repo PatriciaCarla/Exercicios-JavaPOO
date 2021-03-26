@@ -15,6 +15,9 @@ public class Peixe extends Animal{
     public void emitirSom() {
         System.out.println("Peixe não faz som");
     }
+    public void soltarBolha(){
+        System.out.println("Bolhas, minhas bolhas!");
+    }
     //Métodos Especiais
     public Peixe(float p, int i, int m, String ce) {
         this.setPeso(p);
