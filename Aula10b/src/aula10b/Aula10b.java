@@ -5,6 +5,10 @@ public class Aula10b {
         Professor p2 = new Professor("Jose",40,"M","Português",5.600f);
         Funcionario p3 = new Funcionario("Angela",30,"F","ADM",true);
         
+        System.out.println(p1.toString());
+        System.out.println(p2.toString());
+        System.out.println(p3.toString());
+        
         p1.setNome("Bruno Carlos");
         p1.setSexo("M");
         p1.setCurso("1° do Ensino Médio");
@@ -20,5 +24,9 @@ public class Aula10b {
         p3.setSetor("Coordenação");
         p3.fazerAniversario();
         p3.mudarEstado();
+        
+        System.out.println(p1.toString());
+        System.out.println(p2.toString());
+        System.out.println(p3.toString());
     }
 }

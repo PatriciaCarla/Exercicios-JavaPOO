@@ -29,4 +29,9 @@ public class Pessoa {
     public void setSexo(String s) {
         this.sexo = s;
     }
+    @Override
+    public String toString() {
+        return "\nNome: "+ this.getNome() +"\nIdade: "+ this.getIdade() 
+                +"\nSexo: "+ this.getSexo() +"\n\n";
+    }
 }

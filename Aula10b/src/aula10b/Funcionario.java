@@ -3,14 +3,15 @@ package aula10b;
 public class Funcionario extends Pessoa {
     //Atributos
     private String setor;
-    private boolean trabalhando;
+    private boolean trabalhando;    
     //Métodos
     public void mudarEstado() {
-        if (this.isTrabalhando()==false) {
+        this.setTrabalhando(!this.isTrabalhando());
+    /*    if (this.isTrabalhando()==false) {
             this.setTrabalhando(true);            
-        } else {
+     *  } else {
             this.setTrabalhando(false);
-        }
+     *  }*/
     }
     //Métodos especiais
     public Funcionario(String n, int i, String sx, String s, boolean t) {
@@ -32,5 +33,10 @@ public class Funcionario extends Pessoa {
     public void setTrabalhando(boolean t) {
         this.trabalhando = t;
     }
-    
+        @Override
+    public String toString() {
+        return "\nNome: "+ this.getNome() + "\nIdade: "+ this.getIdade() 
+                +"\nSexo:"+ this.getSexo() +"\nSetor:"+ this.getSetor() 
+                +"\nTrabalhando: "+ this.isTrabalhando() +"\n\n";
+    }
 }
