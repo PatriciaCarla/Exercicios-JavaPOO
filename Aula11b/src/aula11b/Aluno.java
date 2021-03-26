@@ -20,4 +20,10 @@ public class Aluno extends Pessoa{
     public int getMatricula(){
         return this.matricula;
     }
+    @Override
+    public String toString() {
+        return "\n"+this.getNome()+","+this.getIdade()+","+this.getSexo()
+                +","+this.getCurso()+","+this.getMatricula()
+                +"\n################\n";
+    }
 }
