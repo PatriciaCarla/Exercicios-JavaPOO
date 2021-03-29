@@ -1,9 +1,9 @@
 package aula13b;
 public abstract class Animal {
     //Atributos
-    private float peso;
-    private int idade;
-    private int membros;
+    protected float peso;
+    protected int idade;
+    protected int membros;
     //Métodos
     public abstract void locomover();
     public abstract void alimentar();
